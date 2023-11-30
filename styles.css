@@ -84,10 +84,21 @@ a {
   border-radius: 50%;
   border: 5px solid var(--main-white);
 }
+/* About Me style */
 .about-me{
   min-height: 100vh; /* 100% viewport */
 }
-
+/* Skills style */
+.skill-list{
+  min-height: 100vh; /* 100% viewport */
+  display: flex;
+  justify-content: space-between;
+  align-items:start;
+  flex-wrap: wrap;
+}
+.skill-list>* {
+  flex: 1 1 auto;
+}
 /* Footer  style */
 footer {
   font-weight: 300;
