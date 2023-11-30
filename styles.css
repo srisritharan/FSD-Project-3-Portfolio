@@ -23,7 +23,6 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  min-height: 100vh; /* 100% viewport */
   background-color: var(--main-gray);
   color: var(--main-white);
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -85,7 +84,9 @@ a {
   border-radius: 50%;
   border: 5px solid var(--main-white);
 }
-
+.about-me{
+  min-height: 100vh; /* 100% viewport */
+}
 
 /* Footer  style */
 footer {
