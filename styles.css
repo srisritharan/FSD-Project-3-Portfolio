@@ -127,10 +127,16 @@ a {
   border-radius: 15px;
   background: var(--main-tomato);
 }
+@media (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+  }
+}
 
 img {
 	max-width: 100%; // stop images from breaking out of their bounding boxes.
 }
+
 /* Contact  style */
 .contact-info {
   font-weight: 300;
