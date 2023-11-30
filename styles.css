@@ -7,6 +7,7 @@
   --main-deepskyblue: #00bfff;
   --main-gray: #303841;
   --main-black: #000;
+  --main-tomato:#ff6347;
 }
 
 html {
@@ -90,7 +91,7 @@ a {
 }
 /* Skills style */
 .skill-list{
-  min-height: 100vh; /* 100% viewport */
+  /* min-height: 100vh; 100% viewport */
   display: flex;
   justify-content: space-between;
   align-items:start;
@@ -99,14 +100,52 @@ a {
 .skill-list>* {
   flex: 1 1 auto;
 }
-/* Footer  style */
-footer {
+/*project section style */
+.projects{
+  margin: 0 auto;
+  background-color: var(--main-blue);
+   
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 1rem;
+    align-items:stretch;
+    
+}
+
+.project-container > * {
+  /* flex: 1 1 0; */
+  flex: 0 0 33.33%;
+}
+.project{
+  /* flex-direction: column; */
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+  background: var(--main-tomato);
+}
+
+img {
+	max-width: 100%; // stop images from breaking out of their bounding boxes.
+}
+/* Contact  style */
+.contact-info {
   font-weight: 300;
   display: flex;
   justify-content: space-evenly;
-  /*  padding: 2rem;  */ /* if we need the footor to be larger height enable this */
+  padding: 2rem;   /* if we need the footor to be larger height enable this */
   /* background: var(--main-black); */
   border-top: 4px solid var(--main-red);
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+  font-size: 80%;
+}
+/* Footer  style */
+footer {
+  padding: 2rem;   /* if we need the footor to be larger height enable this */
+  background: var(--main-black); 
+  border-top: 4px solid var(--main-deepskyblue);
   font-size: 80%;
 }
